@@ -1,0 +1,17 @@
+<h1>Responstable <span>2.0</span> by <span>jordyvanraaij</span></h1>
+<div >
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '14px' }"></ngx-loading>
+
+<table class="responstable">
+  
+  <tr  *ngFor="let sb of data;let i =index">
+      <th data-th="Driver details"><span>{{sb.FirstName}}</span></th>
+    
+  </tr>
+  
+
+  
+</table>
+   <button (click)="addDetail()" title="Add Detail"><i class="lnr lnr-plus-circle"></i></button>
+</div>
+  
